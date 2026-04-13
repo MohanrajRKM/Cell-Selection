@@ -2391,9 +2391,6 @@ img {
 					<a href="_grid_types_selection_interfaces_d_.selectionmodel.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_selection_interfaces_d_.selectionmodel.html#getrowobj" class="tsd-kind-icon">get<wbr>Row<wbr>Obj</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_selection_interfaces_d_.selectionmodel.html#getselectedrowindexes" class="tsd-kind-icon">get<wbr>Selected<wbr>Row<wbr>Indexes</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2494,7 +2491,6 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#cleardeletedselections" class="tsd-kind-icon">clear<wbr>Deleted<wbr>Selections</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#clearrowselection" class="tsd-kind-icon">clear<wbr>Row<wbr>Selection</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#getrowobj" class="tsd-kind-icon">get<wbr>Row<wbr>Obj</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#getselectedrowindexes" class="tsd-kind-icon">get<wbr>Selected<wbr>Row<wbr>Indexes</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#handlegridclick" class="tsd-kind-icon">handle<wbr>Grid<wbr>Click</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_selection_interfaces_d_.selectionmodel.html#headercheckboxonchange" class="tsd-kind-icon">header<wbr>Check<wbr>Box<wbr>OnChange</a></li>
@@ -2744,53 +2740,6 @@ img {
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="getrowobj" class="tsd-anchor"></a>
-				<h3>get<wbr>Row<wbr>Obj</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Obj<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_grid_types_interfaces_d_.irow.html" class="tsd-signature-type">IRow</a><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/types/selection.interfaces.d.ts:273</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Retrieves the full row object from a row element or row index.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>template</dt>
-						<dd><p>T</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>The row DOM element or the numeric index of the row in the table.</p>
-						</dd>
-						<dt>returns</dt>
-						<dd><p>The complete row data object conforming to IRow&lt;ColumnProps<T>&gt;.</p>
-						</dd>
-					</dl>
-				</div>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grid_types_interfaces_d_.irow.html" class="tsd-signature-type">IRow</a><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5>row: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <a href="_grid_types_interfaces_d_.irow.html" class="tsd-signature-type">IRow</a><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 						</li>
@@ -3228,7 +3177,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">update<wbr>Header<wbr>Selection<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/selection.interfaces.d.ts:280</li>
+						<li>Defined in src/grid/types/selection.interfaces.d.ts:272</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

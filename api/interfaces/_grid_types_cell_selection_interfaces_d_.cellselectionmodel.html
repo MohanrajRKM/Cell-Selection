@@ -2369,7 +2369,7 @@ img {
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 			<a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html" class="tsd-kind-icon">Cell<wbr>Deselect<wbr>Event</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private">
 			<a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html" class="tsd-kind-icon">Cell<wbr>Deselecting<wbr>Event</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -2381,10 +2381,10 @@ img {
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html" class="tsd-kind-icon">Cell<wbr>Select<wbr>Event</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html" class="tsd-kind-icon">Cell<wbr>Selecting<wbr>Event</a>
 		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+		<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Model</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2400,7 +2400,7 @@ img {
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#clearcellselection" class="tsd-kind-icon">clear<wbr>Cell<wbr>Selection</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedcelldata" class="tsd-kind-icon">get<wbr>Selected<wbr>Cell<wbr>Data</a>
+					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getcellpositionfromelement" class="tsd-kind-icon">get<wbr>Cell<wbr>Position<wbr>From<wbr>Element</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedrowcellindexes" class="tsd-kind-icon">get<wbr>Selected<wbr>Row<wbr>Cell<wbr>Indexes</a>
@@ -2423,6 +2423,9 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcellsbyrange" class="tsd-kind-icon">select<wbr>Cells<wbr>ByRange</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#updatecellstyles" class="tsd-kind-icon">update<wbr>Cell<wbr>Styles</a>
+				</li>
 			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -2443,14 +2446,6 @@ img {
 					Accessible via <code>gridRef.current.cellSelectionModule</code>.</p>
 				</div>
 			</div>
-		</section>
-		<section class="tsd-panel tsd-type-parameters">
-			<h3>Type parameters</h3>
-			<ul class="tsd-type-parameters">
-				<li>
-					<h4>T</h4>
-				</li>
-			</ul>
 		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
@@ -2476,7 +2471,7 @@ img {
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#clearcellselection" class="tsd-kind-icon">clear<wbr>Cell<wbr>Selection</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedcelldata" class="tsd-kind-icon">get<wbr>Selected<wbr>Cell<wbr>Data</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getcellpositionfromelement" class="tsd-kind-icon">get<wbr>Cell<wbr>Position<wbr>From<wbr>Element</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedrowcellindexes" class="tsd-kind-icon">get<wbr>Selected<wbr>Row<wbr>Cell<wbr>Indexes</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlegridclick" class="tsd-kind-icon">handle<wbr>Grid<wbr>Click</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlegridmousedown" class="tsd-kind-icon">handle<wbr>Grid<wbr>Mouse<wbr>Down</a></li>
@@ -2484,6 +2479,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcell" class="tsd-kind-icon">select<wbr>Cell</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcells" class="tsd-kind-icon">select<wbr>Cells</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcellsbyrange" class="tsd-kind-icon">select<wbr>Cells<wbr>ByRange</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#updatecellstyles" class="tsd-kind-icon">update<wbr>Cell<wbr>Styles</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2497,7 +2493,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">active<wbr>Cell<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:365</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:356</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2518,7 +2514,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">selected<wbr>Cells<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:331</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:322</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2543,7 +2539,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 				<div class="tsd-signature tsd-kind-icon">selected<wbr>Ranges<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellrange.html" class="tsd-signature-type">CellRange</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:372</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:363</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2571,7 +2567,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:292</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:296</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2590,32 +2586,25 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="getselectedcelldata" class="tsd-anchor"></a>
-				<h3>get<wbr>Selected<wbr>Cell<wbr>Data</h3>
+				<a name="getcellpositionfromelement" class="tsd-anchor"></a>
+				<h3>get<wbr>Cell<wbr>Position<wbr>From<wbr>Element</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Selected<wbr>Cell<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grid_types_cell_selection_interfaces_d_.celldata.html" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Cell<wbr>Position<wbr>From<wbr>Element<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:318</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:364</li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Retrieves the actual data values for all selected cells.
-								Returns an array of CellData objects containing cell values, field names, and row data.</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-tsx">const cellData = gridRef.current.cellSelectionModule.getSelectedCellData();
-// Returns: [{ value: 32.5, field: &#39;Freight&#39;, rowData: {...}, rowIndex: 5, columnIndex: 2 }, ...]</code></pre>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-returns-title">Returns <a href="_grid_types_cell_selection_interfaces_d_.celldata.html" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
-						<p>Array of cell data objects with values and metadata.</p>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -2629,7 +2618,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:305</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:309</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2659,7 +2648,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:340</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:331</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2691,7 +2680,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:349</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:340</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2723,7 +2712,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:358</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:349</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2755,7 +2744,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:247</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:251</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2798,7 +2787,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:263</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:267</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2838,7 +2827,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:280</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:284</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2868,6 +2857,29 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 								<div class="tsd-comment tsd-typography">
 									<p>The ending cell position (bottom-right corner).</p>
 								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="updatecellstyles" class="tsd-anchor"></a>
+				<h3>update<wbr>Cell<wbr>Styles</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">update<wbr>Cell<wbr>Styles<span class="tsd-signature-symbol">(</span>rowIndexes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:365</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>rowIndexes: <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
