@@ -7578,7 +7578,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#addrecord">addRecord</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2635</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2646</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7617,7 +7617,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#canceldatachanges">cancelDataChanges</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2626</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2637</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7648,29 +7648,48 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 				<a name="clearcellselection" class="tsd-anchor"></a>
 				<h3>clear<wbr>Cell<wbr>Selection</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<li class="tsd-signature tsd-kind-icon">clear<wbr>Cell<wbr>Selection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">clear<wbr>Cell<wbr>Selection<span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">?: </span><a href="_grid_types_cell_selection_interfaces_d_.rowcellindexes.html" class="tsd-signature-type">RowCellIndexes</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#clearcellselection">clearCellSelection</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2465</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2476</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Clears all cell selections in the grid.
+								<p>Clears cell selections in the grid.
+									If specific cells are provided, only those cells are cleared.
+									If no cells are provided, all cell selections are cleared.
 									Removes highlighting and resets the cell selection state.
 									Only available when selectionSettings.type is &#39;Cell&#39;.
 								Row selection (clearSelection) is unaffected by this operation.</p>
 							</div>
 							<dl class="tsd-comment-tags">
 								<dt>example</dt>
-								<dd><pre><code class="language-tsx">gridRef.current?.clearCellSelection();</code></pre>
+								<dd><pre><code class="language-tsx">// Clear all cell selections
+gridRef.current?.clearCellSelection();
+
+// Clear specific cells
+gridRef.current?.clearCellSelection([
+  { rowIndex: 1, cellIndexes: [2, 3] },
+  { rowIndex: 5, cellIndexes: [1] }
+]);</code></pre>
 								</dd>
 							</dl>
 						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> cells: <a href="_grid_types_cell_selection_interfaces_d_.rowcellindexes.html" class="tsd-signature-type">RowCellIndexes</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Optional. Array of objects specifying rows and their cell indexes to clear.
+									If not provided, all cell selections are cleared.</p>
+								</div>
+							</li>
+						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
@@ -7686,7 +7705,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#clearfilter">clearFilter</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2531</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2542</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7779,7 +7798,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#clearsort">clearSort</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2508</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2519</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7813,7 +7832,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#deleterecord">deleteRecord</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2645</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2656</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7853,7 +7872,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#editrecord">editRecord</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2591</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2602</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -7886,7 +7905,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#filterbycolumn">filterByColumn</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2522</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2533</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8045,7 +8064,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#getcontent">getContent</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2583</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2594</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8166,7 +8185,7 @@ import &#39;@syncfusion/react-grids/styles/material.css&#39;;
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#getheadercontent">getHeaderContent</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2575</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2586</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8348,7 +8367,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#getselectedrowcellindexes">getSelectedRowCellIndexes</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2479</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2490</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8455,7 +8474,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#gotopage">goToPage</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2559</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2570</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8562,7 +8581,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#removefilteredcolsbyfield">removeFilteredColsByField</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2542</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2553</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8602,7 +8621,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#removesortcolumn">removeSortColumn</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2499</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2510</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8636,7 +8655,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#savedatachanges">saveDataChanges</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2612</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2623</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -8682,7 +8701,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#search">search</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2551</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2562</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -9017,7 +9036,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#setpagermessage">setPagerMessage</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2567</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2578</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -9120,7 +9139,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#sortbycolumn">sortByColumn</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2490</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2501</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -9166,7 +9185,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#updaterecord">updateRecord</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2655</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2666</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -9206,7 +9225,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#validateeditform">validateEditForm</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2663</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2674</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -9232,7 +9251,7 @@ if (selection &amp;&amp; typeof selection === &#39;object&#39; &amp;&amp; &#39;i
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="_grid_types_grid_interfaces_d_.gridref.html">GridRef</a>.<a href="_grid_types_grid_interfaces_d_.gridref.html#validatefield">validateField</a></p>
 							<ul>
-								<li>Defined in src/grid/types/grid.interfaces.d.ts:2672</li>
+								<li>Defined in src/grid/types/grid.interfaces.d.ts:2683</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
