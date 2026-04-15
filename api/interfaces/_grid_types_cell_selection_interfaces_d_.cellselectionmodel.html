@@ -2426,6 +2426,9 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcellsbyrange" class="tsd-kind-icon">select<wbr>Cells<wbr>ByRange</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectrange" class="tsd-kind-icon">select<wbr>Range</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-private">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#updatecellstyles" class="tsd-kind-icon">update<wbr>Cell<wbr>Styles</a>
 				</li>
@@ -2483,6 +2486,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcell" class="tsd-kind-icon">select<wbr>Cell</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcells" class="tsd-kind-icon">select<wbr>Cells</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectcellsbyrange" class="tsd-kind-icon">select<wbr>Cells<wbr>ByRange</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#selectrange" class="tsd-kind-icon">select<wbr>Range</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#updatecellstyles" class="tsd-kind-icon">update<wbr>Cell<wbr>Styles</a></li>
 						</ul>
 					</section>
@@ -2497,7 +2501,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">active<wbr>Cell<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:367</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:394</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2518,7 +2522,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Dragging<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:382</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:409</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2540,7 +2544,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">selected<wbr>Cells<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:333</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:360</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2565,7 +2569,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 				<div class="tsd-signature tsd-kind-icon">selected<wbr>Ranges<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellrange.html" class="tsd-signature-type">CellRange</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:374</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:401</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2593,7 +2597,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:307</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:334</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2640,7 +2644,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:392</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:419</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2673,7 +2677,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:320</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:347</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2703,7 +2707,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:342</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:369</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2735,7 +2739,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:351</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:378</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2767,7 +2771,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:360</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:387</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2918,6 +2922,64 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="selectrange" class="tsd-anchor"></a>
+				<h3>select<wbr>Range</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">select<wbr>Range<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a>, end<span class="tsd-signature-symbol">: </span><a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a>, isAdditive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:311</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Selects a rectangular range of cells with optional additive selection.
+									Extends current selection when isAdditive is true, replaces selection when false.
+								Supports all cellSelectionMode values (Flow, Box, BoxWithBorder).</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><pre><code class="language-tsx">// Replace selection with new range
+gridRef.current.cellSelectionModule.selectRange(
+  { rowIndex: 0, columnIndex: 0 },
+  { rowIndex: 5, columnIndex: 3 }
+);
+
+// Add range to existing selection
+gridRef.current.cellSelectionModule.selectRange(
+  { rowIndex: 10, columnIndex: 0 },
+  { rowIndex: 15, columnIndex: 3 },
+  true
+);</code></pre>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>start: <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The starting cell position of the range.</p>
+								</div>
+							</li>
+							<li>
+								<h5>end: <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The ending cell position of the range.</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> isAdditive: <span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-private">
 				<a name="updatecellstyles" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Cell<wbr>Styles</h3>
@@ -2928,7 +2990,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:401</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:428</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

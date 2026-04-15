@@ -2426,6 +2426,9 @@ img {
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-private">
 					<a href="_grid_types_column_interfaces_d_.icolumnbase.html#columns" class="tsd-kind-icon">columns</a>
 				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a href="_grid_types_column_interfaces_d_.icolumnbase.html#contextmenuitems" class="tsd-kind-icon">context<wbr>Menu<wbr>Items</a>
+				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-private">
 					<a href="_grid_types_column_interfaces_d_.icolumnbase.html#customattributes" class="tsd-kind-icon">custom<wbr>Attributes</a>
 				</li>
@@ -2608,6 +2611,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-private"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#children" class="tsd-kind-icon">children</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#clipmode" class="tsd-kind-icon">clip<wbr>Mode</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-private"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#columns" class="tsd-kind-icon">columns</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#contextmenuitems" class="tsd-kind-icon">context<wbr>Menu<wbr>Items</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-private"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#customattributes" class="tsd-kind-icon">custom<wbr>Attributes</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#defaultvalue" class="tsd-kind-icon">default<wbr>Value</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_column_interfaces_d_.icolumnbase.html#disablehtmlencode" class="tsd-kind-icon">disable<wbr>Html<wbr>Encode</a></li>
@@ -2660,7 +2664,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">align<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:856</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:864</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2680,7 +2684,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">align<wbr>Header<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:850</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:858</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2816,7 +2820,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cell<span class="tsd-signature-symbol">:</span> <a href="_grid_types_interfaces_d_.icell.html" class="tsd-signature-type">ICell</a><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_column_interfaces_d_.icolumnbase.html" class="tsd-signature-type">IColumnBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:832</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:840</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2945,6 +2949,29 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>null</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="contextmenuitems" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Menu<wbr>Items</h3>
+				<div class="tsd-signature tsd-kind-icon">context<wbr>Menu<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"Edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Delete"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Save"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Cancel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SortAscending"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SortDescending"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ClearSort"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"FirstPage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PrevPage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"LastPage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"NextPage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"SelectRow"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ClearRowSelection"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ClearSelection"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Sum"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Average"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Min"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Max"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Count"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"TrueCount"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"FalseCount"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Custom"</span><span class="tsd-signature-symbol"> | </span><a href="_grid_types_context_interfaces_d_.contextmenuitemprops.html" class="tsd-signature-type">ContextMenuItemProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_grid_types_column_interfaces_d_.columnprops.html">ColumnProps</a>.<a href="_grid_types_column_interfaces_d_.columnprops.html#contextmenuitems">contextMenuItems</a></p>
+					<ul>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:457</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Defines context menu items to display when right-clicking on cells in the column.
+							Supports default items such as Edit, Delete, Save, Cancel, SortAscending, etc.
+						Also supports customized items through the ContextMenuItemProps configuration object for application-specific actions or commands.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
 						</dd>
 					</dl>
 				</div>
@@ -3175,7 +3202,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Overrides <a href="_grid_types_column_interfaces_d_.columnprops.html">ColumnProps</a>.<a href="_grid_types_column_interfaces_d_.columnprops.html#formatfn">formatFn</a></p>
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:838</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:846</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3240,7 +3267,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">formatted<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:862</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:870</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3585,7 +3612,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Overrides <a href="_grid_types_column_interfaces_d_.columnprops.html">ColumnProps</a>.<a href="_grid_types_column_interfaces_d_.columnprops.html#parsefn">parseFn</a></p>
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:844</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:852</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3605,7 +3632,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">row<span class="tsd-signature-symbol">:</span> <a href="_grid_types_interfaces_d_.irow.html" class="tsd-signature-type">IRow</a><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_column_interfaces_d_.icolumnbase.html" class="tsd-signature-type">IColumnBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:826</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:834</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3849,7 +3876,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Overrides <a href="_grid_types_column_interfaces_d_.columnprops.html">ColumnProps</a>.<a href="_grid_types_column_interfaces_d_.columnprops.html#uid">uid</a></p>
 					<ul>
-						<li>Defined in src/grid/types/column.interfaces.d.ts:868</li>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:876</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
