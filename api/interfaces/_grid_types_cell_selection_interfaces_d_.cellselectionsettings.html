@@ -2391,13 +2391,13 @@ img {
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Settings</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#cellselectionmode" class="tsd-kind-icon">cell<wbr>Selection<wbr>Mode</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#enabled" class="tsd-kind-icon">enabled</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#mode" class="tsd-kind-icon">mode</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#type" class="tsd-kind-icon">type</a>
 				</li>
 			</ul>
 		</li>
@@ -2432,9 +2432,9 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#cellselectionmode" class="tsd-kind-icon">cell<wbr>Selection<wbr>Mode</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#enabled" class="tsd-kind-icon">enabled</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#mode" class="tsd-kind-icon">mode</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html#type" class="tsd-kind-icon">type</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2442,33 +2442,6 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cellselectionmode" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> cell<wbr>Selection<wbr>Mode</h3>
-				<div class="tsd-signature tsd-kind-icon">cell<wbr>Selection<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_grid_types_enum_d_.cellselectionmode.html" class="tsd-signature-type">CellSelectionMode</a></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:38</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Specifies the cell selection mode for range selection behavior.
-						Determines how cells are selected when creating rectangular ranges.</p>
-					</div>
-					<p>Options:</p>
-					<ul>
-						<li><code>Flow</code> - Selects all cells between start/end including all rows (Excel-like)</li>
-						<li><code>Box</code> - Selects only cells within column range boundaries</li>
-						<li><code>BoxWithBorder</code> - Box mode with visible selection border</li>
-					</ul>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>&#39;Flow&#39;</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="enabled" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> enabled</h3>
@@ -2513,6 +2486,33 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>&#39;Multiple&#39; | SelectionMode.Multiple</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="type" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+				<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_grid_types_enum_d_.cellselectiontype.html" class="tsd-signature-type">CellSelectionType</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:38</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Specifies the cell selection type for range selection behavior.
+						Determines how cells are selected when creating rectangular ranges.</p>
+					</div>
+					<p>Options:</p>
+					<ul>
+						<li><code>Flow</code> - Selects all cells between start/end including all rows (Excel-like)</li>
+						<li><code>Box</code> - Selects only cells within column range boundaries</li>
+						<li><code>BoxWithBorder</code> - Box mode with visible selection border</li>
+					</ul>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>&#39;Flow&#39;</p>
 						</dd>
 					</dl>
 				</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CellTypes | Syncfusion React</title>
+	<title>CellSelectionType | Syncfusion React</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2372,28 +2372,25 @@ img {
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 			<a href="_grid_types_enum_d_.autoselectmode.html" class="tsd-kind-icon">Auto<wbr>Select<wbr>Mode</a>
 		</li>
-		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+		<li class="current tsd-kind-enum tsd-parent-kind-external-module">
 			<a href="_grid_types_enum_d_.cellselectiontype.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Type</a>
+			<ul>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="_grid_types_enum_d_.cellselectiontype.html#box" class="tsd-kind-icon">Box</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="_grid_types_enum_d_.cellselectiontype.html#boxwithborder" class="tsd-kind-icon">Box<wbr>With<wbr>Border</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="_grid_types_enum_d_.cellselectiontype.html#flow" class="tsd-kind-icon">Flow</a>
+				</li>
+			</ul>
 		</li>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 			<a href="_grid_types_enum_d_.celltype.html" class="tsd-kind-icon">Cell<wbr>Type</a>
 		</li>
-		<li class="current tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="_grid_types_enum_d_.celltypes.html" class="tsd-kind-icon">Cell<wbr>Types</a>
-			<ul>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="_grid_types_enum_d_.celltypes.html#data" class="tsd-kind-icon">Data</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="_grid_types_enum_d_.celltypes.html#filter" class="tsd-kind-icon">Filter</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="_grid_types_enum_d_.celltypes.html#header" class="tsd-kind-icon">Header</a>
-				</li>
-				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="_grid_types_enum_d_.celltypes.html#summary" class="tsd-kind-icon">Summary</a>
-				</li>
-			</ul>
 		</li>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 			<a href="_grid_types_enum_d_.clipmode.html" class="tsd-kind-icon">Clip<wbr>Mode</a>
@@ -2483,8 +2480,23 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Defines various types of cells in the grid.</p>
+					<p>Defines the cell selection mode for rectangular range selection behavior.
+					Controls how cells are selected when creating ranges via mouse drag or keyboard shortcuts.</p>
 				</div>
+				<p>Modes:</p>
+				<ul>
+					<li><code>Flow</code> - Selects all cells between start and end positions including all intermediate rows (default Excel-like behavior)</li>
+					<li><code>Box</code> - Selects only cells within the column boundaries of the start and end positions</li>
+					<li><code>BoxWithBorder</code> - Box mode with visible border highlighting around the selection</li>
+				</ul>
+				<dl class="tsd-comment-tags">
+					<dt>default</dt>
+					<dd><p>Flow</p>
+					</dd>
+					<dt>example</dt>
+					<dd><pre><code class="language-tsx">&lt;Grid selectionSettings={{ type: &#39;Cell&#39;, cellSelection: { enabled: true, type: CellSelectionType.Box } }} /&gt;</code></pre>
+					</dd>
+				</dl>
 			</div>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -2494,10 +2506,9 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.celltypes.html#data" class="tsd-kind-icon">Data</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.celltypes.html#filter" class="tsd-kind-icon">Filter</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.celltypes.html#header" class="tsd-kind-icon">Header</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.celltypes.html#summary" class="tsd-kind-icon">Summary</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.cellselectiontype.html#box" class="tsd-kind-icon">Box</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.cellselectiontype.html#boxwithborder" class="tsd-kind-icon">Box<wbr>With<wbr>Border</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_grid_types_enum_d_.cellselectiontype.html#flow" class="tsd-kind-icon">Flow</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2506,63 +2517,66 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Enumeration members</h2>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="data" class="tsd-anchor"></a>
-				<h3>Data</h3>
-				<div class="tsd-signature tsd-kind-icon">Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+				<a name="box" class="tsd-anchor"></a>
+				<h3>Box</h3>
+				<div class="tsd-signature tsd-kind-icon">Box<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Box&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/enum.d.ts:48</li>
+						<li>Defined in src/grid/types/enum.d.ts:969</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Defines CellType as Data</p>
+						<p>Selects only cells within the column boundaries of the start and end positions.
+						Creates a rectangular block selection limited to the specified column range.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>&#39;Box&#39;</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="filter" class="tsd-anchor"></a>
-				<h3>Filter</h3>
-				<div class="tsd-signature tsd-kind-icon">Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
+				<a name="boxwithborder" class="tsd-anchor"></a>
+				<h3>Box<wbr>With<wbr>Border</h3>
+				<div class="tsd-signature tsd-kind-icon">Box<wbr>With<wbr>Border<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;BoxWithBorder&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/enum.d.ts:54</li>
+						<li>Defined in src/grid/types/enum.d.ts:976</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Defines CellType as Filter</p>
+						<p>Box mode with visible border highlighting around the selection.
+						Provides a visual outline around the selected rectangular range for better clarity.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>&#39;BoxWithBorder&#39;</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="header" class="tsd-anchor"></a>
-				<h3>Header</h3>
-				<div class="tsd-signature tsd-kind-icon">Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+				<a name="flow" class="tsd-anchor"></a>
+				<h3>Flow</h3>
+				<div class="tsd-signature tsd-kind-icon">Flow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;Flow&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/enum.d.ts:50</li>
+						<li>Defined in src/grid/types/enum.d.ts:962</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Defines CellType as Header</p>
+						<p>Selects all cells between start and end positions including all intermediate rows (Excel-like behavior).
+						Direction-aware selection: maintains selection logic based on drag direction.</p>
 					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="summary" class="tsd-anchor"></a>
-				<h3>Summary</h3>
-				<div class="tsd-signature tsd-kind-icon">Summary<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/types/enum.d.ts:52</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Defines CellType as Summary</p>
-					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>&#39;Flow&#39;</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 		</section>
