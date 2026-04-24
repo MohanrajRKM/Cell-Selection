@@ -2388,31 +2388,32 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 				<a name="usecellselection" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> use<wbr>Cell<wbr>Selection</h3>
-				<div class="tsd-signature tsd-kind-icon">use<wbr>Cell<wbr>Selection<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, currentViewData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cellSelectionSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html" class="tsd-signature-type">CellSelectionSettings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-signature-type">CellSelectionModel</a></div>
+				<div class="tsd-signature tsd-kind-icon">use<wbr>Cell<wbr>Selection<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, currentViewData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, selectionSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_selection_interfaces_d_.selectionsettings.html" class="tsd-signature-type">SelectionSettings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-signature-type">CellSelectionModel</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/hooks/useCellSelection.d.ts:13</li>
+						<li>Defined in src/grid/hooks/useCellSelection.d.ts:15</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Custom hook to manage cell selection state and API</p>
+						<p>Initializes cell selection module for the grid.
+						Manages selection state, event triggers, and user interactions.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>template</dt>
-						<dd><p>T - The type of data in the grid</p>
+						<dd><p>T - The grid data model type</p>
 						</dd>
 						<dt>param</dt>
 						<dd><p>Reference to the grid component</p>
 						</dd>
 						<dt>param</dt>
-						<dd><p>Current view data for the active page/view</p>
+						<dd><p>Current view of grid data (accounting for paging/filtering)</p>
 						</dd>
 						<dt>param</dt>
-						<dd><p>Cell selection configuration</p>
+						<dd><p>Selection configuration (includes cell selection settings)</p>
 						</dd>
 						<dt>returns</dt>
-						<dd><p>An object containing cell selection state and API</p>
+						<dd><p>The cell selection module with public API</p>
 						</dd>
 					</dl>
 				</div>
@@ -2421,7 +2422,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-has-type-parameter">
-								<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, currentViewData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cellSelectionSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html" class="tsd-signature-type">CellSelectionSettings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-signature-type">CellSelectionModel</a></li>
+								<li class="tsd-signature tsd-kind-icon">&lt;T&gt;<span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, currentViewData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, selectionSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_selection_interfaces_d_.selectionsettings.html" class="tsd-signature-type">SelectionSettings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-signature-type">CellSelectionModel</a></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2440,7 +2441,7 @@ img {
 											<h5>currentViewData: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
 										</li>
 										<li>
-											<h5>cellSelectionSettings: <a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html" class="tsd-signature-type">CellSelectionSettings</a></h5>
+											<h5>selectionSettings: <a href="../interfaces/_grid_types_selection_interfaces_d_.selectionsettings.html" class="tsd-signature-type">SelectionSettings</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="../interfaces/_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-signature-type">CellSelectionModel</a></h4>
