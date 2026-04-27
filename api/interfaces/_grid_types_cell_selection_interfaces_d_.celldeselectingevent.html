@@ -2382,12 +2382,18 @@ img {
 					<a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#data" class="tsd-kind-icon">data</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#deselectedrowcells" class="tsd-kind-icon">deselected<wbr>Row<wbr>Cells</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#event" class="tsd-kind-icon">event</a>
 				</li>
 			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-kind-icon">Cell<wbr>Position</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+			<a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html" class="tsd-kind-icon">Cell<wbr>Position<wbr>Data</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellrange.html" class="tsd-kind-icon">Cell<wbr>Range</a>
@@ -2402,10 +2408,13 @@ img {
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Model</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-			<a href="_grid_types_cell_selection_interfaces_d_.cellselectionsettings.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Settings</a>
+			<a href="_grid_types_cell_selection_interfaces_d_.rowcellindexesdata.html" class="tsd-kind-icon">Row<wbr>Cell<wbr>Indexes<wbr>Data</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-			<a href="_grid_types_cell_selection_interfaces_d_.rowcellindexes.html" class="tsd-kind-icon">Row<wbr>Cell<wbr>Indexes</a>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+			<a href="../modules/_grid_types_cell_selection_interfaces_d_.html#cellrangeposition" class="tsd-kind-icon">Cell<wbr>Range<wbr>Position</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+			<a href="../modules/_grid_types_cell_selection_interfaces_d_.html#rowcellindexes" class="tsd-kind-icon">Row<wbr>Cell<wbr>Indexes</a>
 		</li>
 	</ul>
 </nav>
@@ -2450,6 +2459,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#cancel" class="tsd-kind-icon">cancel</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#cells" class="tsd-kind-icon">cells</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#data" class="tsd-kind-icon">data</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#deselectedrowcells" class="tsd-kind-icon">deselected<wbr>Row<wbr>Cells</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.celldeselectingevent.html#event" class="tsd-kind-icon">event</a></li>
 						</ul>
 					</section>
@@ -2464,7 +2474,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:230</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:257</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2481,16 +2491,17 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="cells" class="tsd-anchor"></a>
 				<h3>cells</h3>
-				<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a><span class="tsd-signature-symbol">[]</span></div>
+				<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html" class="tsd-signature-type">CellPositionData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html">CellDeselectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html#cells">cells</a></p>
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:204</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:222</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Array of cell positions being deselected.</p>
+						<p>Array of cell positions being deselected in data-based format.
+						Uses primary key and field name for persistent identification.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2506,7 +2517,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html">CellDeselectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html#data">data</a></p>
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:210</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:228</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2521,13 +2532,37 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="deselectedrowcells" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> deselected<wbr>Row<wbr>Cells</h3>
+				<div class="tsd-signature tsd-kind-icon">deselected<wbr>Row<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_cell_selection_interfaces_d_.html#rowcellindexes" class="tsd-signature-type">RowCellIndexes</a><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html">CellDeselectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html#deselectedrowcells">deselectedRowCells</a></p>
+					<ul>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:243</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Array of deselected cells grouped by row in the format appropriate for the current selection mode.
+							In index-based mode: contains { rowIndex, cellIndexes } format.
+							In data-based mode: contains { rowKey, fieldNames } format.
+						Populated when cellPersistSelection is enabled or when working with persistent key values.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="event" class="tsd-anchor"></a>
 				<h3>event</h3>
 				<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">KeyboardEvent</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html">CellDeselectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.celldeselectevent.html#event">event</a></p>
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:216</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:234</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

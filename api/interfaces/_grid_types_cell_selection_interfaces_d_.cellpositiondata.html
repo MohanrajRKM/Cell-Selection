@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CellSelectingEvent | Syncfusion React</title>
+	<title>CellPositionData | Syncfusion React</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2375,8 +2375,16 @@ img {
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-kind-icon">Cell<wbr>Position</a>
 		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+		<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html" class="tsd-kind-icon">Cell<wbr>Position<wbr>Data</a>
+			<ul>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html#rowkey" class="tsd-kind-icon">row<wbr>Key</a>
+				</li>
+			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellrange.html" class="tsd-kind-icon">Cell<wbr>Range</a>
@@ -2384,31 +2392,8 @@ img {
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html" class="tsd-kind-icon">Cell<wbr>Select<wbr>Event</a>
 		</li>
-		<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private">
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html" class="tsd-kind-icon">Cell<wbr>Selecting<wbr>Event</a>
-			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#activecell" class="tsd-kind-icon">active<wbr>Cell</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#cancel" class="tsd-kind-icon">cancel</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#cells" class="tsd-kind-icon">cells</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#data" class="tsd-kind-icon">data</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#event" class="tsd-kind-icon">event</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#range" class="tsd-kind-icon">range</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#selectedrowcells" class="tsd-kind-icon">selected<wbr>Row<wbr>Cells</a>
-				</li>
-			</ul>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html" class="tsd-kind-icon">Cell<wbr>Selection<wbr>Model</a>
@@ -2429,30 +2414,17 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Event arguments for cell selecting events (before selection is finalized).
-						Extends CellSelectEvent with cancellation capability.
-					Used to validate or prevent cell selection based on custom logic.</p>
+					<p>Represents the position of a single cell using primary key and field name.
+						Used to identify specific cells persistently across paging, sorting, and filtering operations.
+					This is the standard format for all cell selection operations.</p>
 				</div>
 			</div>
-		</section>
-		<section class="tsd-panel tsd-type-parameters">
-			<h3>Type parameters</h3>
-			<ul class="tsd-type-parameters">
-				<li>
-					<h4>T</h4>
-				</li>
-			</ul>
 		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html" class="tsd-signature-type">CellSelectEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
-					<ul class="tsd-hierarchy">
-						<li>
-							<span class="target">CellSelectingEvent</span>
-						</li>
-					</ul>
+					<span class="target">CellPositionData</span>
 				</li>
 			</ul>
 		</section>
@@ -2463,13 +2435,8 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#activecell" class="tsd-kind-icon">active<wbr>Cell</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#cancel" class="tsd-kind-icon">cancel</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#cells" class="tsd-kind-icon">cells</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#data" class="tsd-kind-icon">data</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#event" class="tsd-kind-icon">event</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#range" class="tsd-kind-icon">range</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_grid_types_cell_selection_interfaces_d_.cellselectingevent.html#selectedrowcells" class="tsd-kind-icon">selected<wbr>Row<wbr>Cells</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html#fieldname" class="tsd-kind-icon">field<wbr>Name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html#rowkey" class="tsd-kind-icon">row<wbr>Key</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2477,109 +2444,19 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="activecell" class="tsd-anchor"></a>
-				<h3>active<wbr>Cell</h3>
-				<div class="tsd-signature tsd-kind-icon">active<wbr>Cell<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html" class="tsd-signature-type">CellPositionData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#activecell">activeCell</a></p>
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:184</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The currently active (focused) cell position in data-based format.
-							Represents the cell that has keyboard focus using primary key and field name.
-						Persists across paging, sorting, and filtering operations.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>null</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cancel" class="tsd-anchor"></a>
-				<h3>cancel</h3>
-				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<a name="fieldname" class="tsd-anchor"></a>
+				<h3>field<wbr>Name</h3>
+				<div class="tsd-signature tsd-kind-icon">field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:209</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:40</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Set to true to cancel the cell selection operation.
-						Prevents the cells from being selected, allowing validation or conditional logic.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>false</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="cells" class="tsd-anchor"></a>
-				<h3>cells</h3>
-				<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellpositiondata.html" class="tsd-signature-type">CellPositionData</a><span class="tsd-signature-symbol">[]</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#cells">cells</a></p>
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:155</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Array of selected cell positions in data-based format (rowKey and fieldName).
-							Provides persistent identification of cells across paging, sorting, and filtering.
-						Each position contains the primary key value and field name of a selected cell.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>[]</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="data" class="tsd-anchor"></a>
-				<h3>data</h3>
-				<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.celldata.html" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#data">data</a></p>
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:169</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Array of cell data values for all selected cells.
-						Contains the actual data from each selected cell.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>[]</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="event" class="tsd-anchor"></a>
-				<h3>event</h3>
-				<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">KeyboardEvent</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#event">event</a></p>
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:176</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The browser event that triggered the cell selection.
-						Can be a mouse event (click, drag) or keyboard event (Shift+Arrow).</p>
+						<p>The field name (column identifier) of the cell.
+						Uniquely identifies the column within the grid.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2588,48 +2465,23 @@ img {
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="range" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> range</h3>
-				<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="_grid_types_cell_selection_interfaces_d_.cellrange.html" class="tsd-signature-type">CellRange</a></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="rowkey" class="tsd-anchor"></a>
+				<h3>row<wbr>Key</h3>
+				<div class="tsd-signature tsd-kind-icon">row<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#range">range</a></p>
 					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:162</li>
+						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:33</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The cell range if range selection was performed.
-						Present only when user selects multiple cells via drag or Shift+Click.</p>
+						<p>The primary key value of the row containing the cell.
+						Used to identify the row persistently across data operations.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
-						<dd><p>undefined</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="selectedrowcells" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> selected<wbr>Row<wbr>Cells</h3>
-				<div class="tsd-signature tsd-kind-icon">selected<wbr>Row<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_cell_selection_interfaces_d_.html#rowcellindexes" class="tsd-signature-type">RowCellIndexes</a><span class="tsd-signature-symbol">[]</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html">CellSelectEvent</a>.<a href="_grid_types_cell_selection_interfaces_d_.cellselectevent.html#selectedrowcells">selectedRowCells</a></p>
-					<ul>
-						<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:193</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Array of selected cells grouped by row in the format appropriate for the current selection mode.
-							In index-based mode: contains { rowIndex, cellIndexes } format.
-							In data-based mode: contains { rowKey, fieldNames } format.
-						Populated when cellPersistSelection is enabled or when working with persistent key values.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>undefined</p>
+						<dd><p>-</p>
 						</dd>
 					</dl>
 				</div>
